@@ -8,7 +8,6 @@ celery = "*"
 dask = "*"
 fastapi = "*"
 pydantic = "*"
-redis = "*"
 uvicorn = "*"
 
 [dev-packages]
