@@ -20,9 +20,9 @@ RESULTS_DIR = os.path.join(os.getcwd(), 'results')
 os.makedirs(RESULTS_DIR, exist_ok=True)
 
 
-# pydantic class for file path, can be extended with url, for example
+# pydantic class for file path, can be extended with file url, for example, to support other formats
 class FileSource(BaseModel):
-    file_path: str | None = None
+    file_path: str
 
 
 @app.post("/process-file/")
